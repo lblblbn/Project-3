@@ -23,8 +23,40 @@
 </head>
 
 <body>	
+<div id="jqt">
 
-	<div id="homepage" class="container clr">	
+			<div id="home" class="current">
+                <div class="toolbar">
+                    <h1>MAINPAGE</h1>
+                    <a class="button slideup" id="infoButton" href="#about">About</a>
+                </div>
+                <div class="scroll">
+                    <ul class="rounded">
+                        <li class="arrow"><a href="#ui">User Interface <small class="counter">5</small></a> </li>
+                        <li class="arrow"><a href="#animations">Animations <small class="counter">7</small></a></li>
+                        <li class="arrow"><a href="#ajax">AJAX <small class="counter">4</small></a></li>
+                        <li class="arrow"><a href="#callbacks">Events <small class="counter">4</small></a></li>
+                        <li class="arrow"><a href="#extensions">Extensions <small class="counter">4</small></a> </li>
+                        <li class="arrow"><a href="#demos">Demos <small class="counter">2</small></a></li>
+                        <li class="arrow"><a href="#themes">Themes <small class="counter">2</small></a></li>
+                    </ul>
+                    <h2>External Links</h2>
+                    <ul class="rounded">
+                        <li class="forward"><a target="_blank" href="http://www.jqtouch.com/">Homepage</a></li>
+                        <li class="forward"><a target="_blank" href="http://twitter.com/#!/jqtouch">Twitter</a></li>
+                        <li class="forward"><a target="_blank" href="http://github.com/senchalabs/jQTouch">GitHub</a></li>
+                    </ul>
+                    <ul class="individual">
+                        <li><a target="_blank" href="http://twitter.com/!#/davidkaneda">@davidkaneda</a></li>
+                        <li><a target="_blank" href="http://twitter.com/!#/beedesk">@beedesk</a></li>
+                    </ul>
+                    <div class="info">
+                        <p>Add this page to your home screen <br>for a richer experience.</p>
+                    </div>
+                </div>
+            </div>
+
+	<div id="about" class="container clr">	
 		<header>
 			<div class="titlebar">
 				<h1 class="title"><a href="http://cs.iupui.edu/~lingb/">Bo Ling</a></h1>
@@ -53,21 +85,6 @@
 		</header>
 
 		<div class="content clr">
-			<div class="test">
-				<p><i class="icon-th-large icon-spin"></i> <b>Test page</b></p>
-				<ul>
-					<li><a href="http://www.google.com/">Google</a></li>
-					<li><a href="http://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
-					<li><a href="http://www.cssbuttongenerator.com/">CSS button generator</a></li>
-					<li><a href="http://cssarrowplease.com/">CSS arrow</a></li>
-					<li><a href="http://www.colorzilla.com/gradient-editor/">CSS gradient</a></li>
-					<li><a href="http://colorschemedesigner.com/#3s11Tw0w0w0w0">Color scheme</a></li>
-					<li><a href="http://apps.eky.hk/css-triangle-generator/">Triangle generator</a></li>
-					<li><a href="http://www.jsdb.io/">Javascript libraries</a></li>
-					<li><a href="http://www.ejeliot.com/blog/59">Containing floats</a></li>
-					<li><a href="http://www.clicktorelease.com/blog/how-to-make-clouds-with-css-3d">CSS 3D clouds</a></li>
-				</ul>
-			</div>
 
 			<div class="articles">
 				<h2>Articles</h2>
@@ -117,7 +134,22 @@
 
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+	
+	<script src="assets/js/libs/jqtouch.min.js"></script>
 	<script src="assets/js/libs/jqtouch-jquery.min.js" type="application/x-javascript" charset="utf-8"></script>
 	<script src="assets/js/app.js"></script>
+	        
+			<script type="text/javascript" charset="utf-8">
+            var jQT = new $.jQTouch({
+                icon: 'jqtouch.png',
+                icon4: 'jqtouch4.png',
+                addGlossToIcon: false,
+                startupScreen: 'jqt_startup.png',
+                statusBar: 'black-translucent',
+                themeSelectionSelector: '#jqt #themes ul',
+                preloadImages: []
+            });
+			</script>
 </body>
 </html>
