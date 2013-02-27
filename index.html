@@ -1,155 +1,54 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jqtouch page</title>
 
-	<title>Test page</title>
+		<script src="assets/js/jquery-1.9.1.min.js" type="application/x-javascript" charset="utf-8"></script>
+		
+		<script src="assets/js/jqtouch.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/jqtouch-jquery.min.js" type="application/x-javascript" charset="utf-8"></script>
 
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link type="text/css" rel="stylesheet" href="assets/css/apple.css">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<!-- JavaScript -->
+		<script type="text/javascript">
+		var jQT = $.jQTouch({
+			statusBar: 'black'
+		});
+		</script>
 
-	<link rel="stylesheet" href="assets/css/normalize.css">
-	<link rel="stylesheet" href="assets/css/app.css">
+		<!-- CSS styles -->
+		<style type="text/css" >
+		</style>
+	</head>
 
-	<script src="assets/js/libs/modernizr.foundation.js"></script>
-</head>
+	<body>
+		<div id="jqt">
 
-<body>	
-<div id="jqt">
-
-			<div id="home" class="current">
-                <div class="toolbar">
-                    <h1>MAINPAGE</h1>
-                    <a class="button slideup" id="infoButton" href="#about">About</a>
-                </div>
-                <div class="scroll">
-                    <ul class="rounded">
-                        <li class="arrow"><a href="#ui">User Interface <small class="counter">5</small></a> </li>
-                        <li class="arrow"><a href="#animations">Animations <small class="counter">7</small></a></li>
-                        <li class="arrow"><a href="#ajax">AJAX <small class="counter">4</small></a></li>
-                        <li class="arrow"><a href="#callbacks">Events <small class="counter">4</small></a></li>
-                        <li class="arrow"><a href="#extensions">Extensions <small class="counter">4</small></a> </li>
-                        <li class="arrow"><a href="#demos">Demos <small class="counter">2</small></a></li>
-                        <li class="arrow"><a href="#themes">Themes <small class="counter">2</small></a></li>
-                    </ul>
-                    <h2>External Links</h2>
-                    <ul class="rounded">
-                        <li class="forward"><a target="_blank" href="http://www.jqtouch.com/">Homepage</a></li>
-                        <li class="forward"><a target="_blank" href="http://twitter.com/#!/jqtouch">Twitter</a></li>
-                        <li class="forward"><a target="_blank" href="http://github.com/senchalabs/jQTouch">GitHub</a></li>
-                    </ul>
-                    <ul class="individual">
-                        <li><a target="_blank" href="http://twitter.com/!#/davidkaneda">@davidkaneda</a></li>
-                        <li><a target="_blank" href="http://twitter.com/!#/beedesk">@beedesk</a></li>
-                    </ul>
-                    <div class="info">
-                        <p>Add this page to your home screen <br>for a richer experience.</p>
-                    </div>
-                </div>
-            </div>
-
-	<div id="about" class="container clr">	
-		<header>
-			<div class="titlebar">
-				<h1 class="title"><a href="http://cs.iupui.edu/~lingb/">Bo Ling</a></h1>
-
-				<a href="#" class="bars position-right">
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-				</a>
+			<div id="home">
+				<div class="toolbar">
+					<h1>Bo Ling</h1>
+				</div>
+				<ul class="rounded">
+					<li class="arrow"><a href="#articles">Articles</a></li>
+					<li class="arrow"><a href="#contact">Contact</a></li>
+					<li class="arrow"><a href="#about">About</a></li>
+				</ul>
+				<div class="info">
+					<p class="copyright">&copy; 2013 - Bo Ling</p>
+				</div>
 			</div>
 
-			<nav class="nav">
-				<a href="index.html" class="nav-button">Main <i class="icon-chevron-right"></i></a>
-				<a href="about.html" class="nav-button">About <i class="icon-chevron-right"></i></a>
-				<a href="contact.html" class="nav-button">Contact <i class="icon-chevron-right"></i></a>
-			</nav>
-
-			<div class="nav-style-changer">
-				<a href="#" class="primary button">Default menu</a>
-				<a href="#nav-style1" class="button">Menu style 1</a>
-				<a href="#nav-style2" class="button">Menu style 2</a>
-				<a href="#nav-style3" class="button">Menu style 3</a>
-				<span>CHANGE BUTTON STYLE</span>
+			<div id="about">
+				<div class="toolbar">
+					<h1>About</h1>
+					<a class="button back" href="#">Back</a>
+				</div>
+				<ul class="rounded">
+					<li>This is page 2</li>
+				</ul>
 			</div>
-		</header>
-
-		<div class="content clr">
-
-			<div class="articles">
-				<h2>Articles</h2>
-				
-				<article class="article-excerpt">
-					<a href="article1.html">
-						<img src="assets/img/pic1.JPG" alt="picture 1" class="thumbnail" />
-						<h3>Article I</h3>
-						<p>And my mistress reeks. And let base of being; And I frame my love what in such a rainy morrow. Sweet self deceivest By wilful taste of more.</p>
-						<i class="icon-chevron-right"></i>
-					</a>
-				</article>
-
-				<article class="article-excerpt">
-					<a href="article2.html">
-						<img src="assets/img/pic2.JPG" alt="picture 2" class="thumbnail" />
-						<h3>Article II</h3>
-						<p>It see I have mine eyes. To this growing age. Like to this thy 'Will.' CXXXVII Thou shouldst print more. The monarch's plague.</p>
-						<i class="icon-chevron-right"></i>
-					</a>
-				</article>
-
-				<article class="article-excerpt">
-					<a href="article3.html">
-						<img src="assets/img/pic3.JPG" alt="picture 3" class="thumbnail" />
-						<h3>Article III</h3>
-						<p>Evermore unrest; My will keep an enjoyer. Great receipt with thy name of sums. Against thy heart be won. Which erst from your sight.</p>
-						<i class="icon-chevron-right"></i>
-					</a>
-				</article>
-
-				<article class="article-excerpt">
-					<a href="article4.html">
-						<img src="assets/img/pic4.JPG" alt="picture 4" class="thumbnail" />
-						<h3>Article IV</h3>
-						<p>Against thy glass shall ever be; And to his heart-inflaming brand. To base touches me excuse my outcast state. And all forwards do fawn upon. </p>
-						<i class="icon-chevron-right"></i>
-					</a>
-				</article>
-			</div>
-		</div>		
-
-		<footer>
-			<p class="copyright">&copy; 2013 - Bo Ling</p>
-		</footer>
-	</div>
-
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
-	
-	<script src="assets/js/libs/jqtouch.min.js"></script>
-	<script src="assets/js/libs/jqtouch-jquery.min.js" type="application/x-javascript" charset="utf-8"></script>
-	<script src="assets/js/app.js"></script>
-	        
-			<script type="text/javascript" charset="utf-8">
-            var jQT = new $.jQTouch({
-                icon: 'jqtouch.png',
-                icon4: 'jqtouch4.png',
-                addGlossToIcon: false,
-                startupScreen: 'jqt_startup.png',
-                statusBar: 'black-translucent',
-                themeSelectionSelector: '#jqt #themes ul',
-                preloadImages: []
-            });
-			</script>
-</body>
+		</div>
+	</body>
 </html>
